@@ -52,11 +52,15 @@
     <Compile Include="GUI\BankUI.Designer.cs">
       <DependentUpon>BankUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\DbAcess\Dbbank.cs" />
     <Compile Include="Start.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\DbAcess\DBConnect.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\BankUI.resx">
+      <DependentUpon>BankUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -79,9 +83,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\Abstract\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,8 +9,13 @@ namespace BankSystem.Model.DbAcess
 {
     class DbConnect
     {
-        public SqlConnection SqlConnection { get; set; }
+        public static SqlConnection SqlConnection { get; set; }
 
-
+        public DbConnect()
+        {
+            SqlConnection = new SqlConnection();
+            SqlConnection.ConnectionString = @"Data Source = localhost; Initial Catalog = BankDB; Integrated Security=True";
+            
+        }
     }
 }
