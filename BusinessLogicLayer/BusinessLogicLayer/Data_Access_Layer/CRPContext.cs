@@ -1,16 +1,16 @@
+using System.Data.Entity;
+using BusinessLogicLayer.Application_Layer.Model_Layer;
+
 namespace BusinessLogicLayer.Data_Access_Layer
 {
-    using System;
-    using System.Data.Entity;
-    using System.Linq;
-
-    public class CRPContext : DbContext
+    public class CrpContext : DbContext
     {
-        public CRPContext()
-            : base("name=CRPContext")
+        public CrpContext() : base("name=CRPContext")
         {
         }
-        
-    }
 
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Rental> Rentals { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+    }
 }

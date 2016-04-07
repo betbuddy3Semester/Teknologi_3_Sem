@@ -1,18 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace BusinessLogicLayer.Application_Layer.Model_Layer
 {
     public class Product
     {
-        public IEnumerable<Rental> Rentals { get; set; }
-
-        public Product(string name, int id)
-        {
-            Name = name;
-            Id = id;
-        }
-
+        [MaxLength(50), Required]
         public string Name { get; set; }
-        public int Id { get; set; }
+        public int ProductId { get; set; }
+        public bool IsRented { get; set; }
     }
 }
