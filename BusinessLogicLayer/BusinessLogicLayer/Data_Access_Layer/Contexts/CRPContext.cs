@@ -7,6 +7,8 @@ namespace BusinessLogicLayer.Data_Access_Layer.Contexts
     {
         public CrpContext() : base("name=CRPContext")
         {
+            Configuration.LazyLoadingEnabled = false;
+            Configuration.ProxyCreationEnabled = false;
         }
 
         public DbSet<Product> Products { get; set; }
