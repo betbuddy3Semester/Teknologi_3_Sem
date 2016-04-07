@@ -1,7 +1,7 @@
 using System.Data.Entity;
 using BusinessLogicLayer.Application_Layer.Model_Layer;
 
-namespace BusinessLogicLayer.Data_Access_Layer
+namespace BusinessLogicLayer.Data_Access_Layer.Contexts
 {
     public class CrpContext : DbContext
     {

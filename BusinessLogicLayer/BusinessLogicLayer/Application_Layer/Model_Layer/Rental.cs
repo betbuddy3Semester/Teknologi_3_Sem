@@ -9,7 +9,7 @@ namespace BusinessLogicLayer.Application_Layer.Model_Layer
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
 
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None), ForeignKey("Product")]
         public int ProductId { get; set; }
         
         public Product Product { get; set; }

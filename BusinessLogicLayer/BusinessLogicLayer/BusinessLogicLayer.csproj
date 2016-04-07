@@ -54,8 +54,8 @@
     <Compile Include="Application_Layer\Model_Layer\Customer.cs" />
     <Compile Include="Application_Layer\Model_Layer\Rental.cs" />
     <Compile Include="Application_Layer\Model_Layer\Product.cs" />
-    <Compile Include="Data_Access_Layer\CRPContext.cs" />
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Data_Access_Layer\Contexts\CRPContext.cs" />
+    <Compile Include="Data_Access_Layer\Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

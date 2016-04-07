@@ -1,18 +1,16 @@
-namespace BusinessLogicLayer.Migrations
-{
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+using System.Data.Entity.Migrations;
+using BusinessLogicLayer.Data_Access_Layer.Contexts;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<BusinessLogicLayer.Data_Access_Layer.CrpContext>
+namespace BusinessLogicLayer.Data_Access_Layer.Migrations
+{
+    internal sealed class Configuration : DbMigrationsConfiguration<CrpContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(BusinessLogicLayer.Data_Access_Layer.CrpContext context)
+        protected override void Seed(CrpContext context)
         {
             //  This method will be called after migrating to the latest version.
 
